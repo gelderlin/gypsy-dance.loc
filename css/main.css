@@ -1,0 +1,117 @@
+html, body, div, 
+h1, h2, h3, h4, h5, h6, p, span
+table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+img {border: 0;}
+body {font-family: Georgia, Verdana, Arial, Helvetica, sans-serif; color: #000; background:url('/img/rose_bg.jpg')}
+table.main_table {background:url('../img/gypsy-dance.jpg') no-repeat; background-position:bottom right; background-color:#FFFFFF;width:1200px;}
+table.container {
+    margin: 0 auto;
+}
+img.logo {text-align:left;}
+div.menu_block {padding-left:25px; padding-top:10px;}
+div.news_block {padding-right:45px; margin-top:10px;}
+div.content_block {min-height:800px; padding-left:45px; padding-right:45px; min-width:700px; height:expression(this.scrollHeight<801?"800px":"auto");}
+div.logo_block {min-width:300px; padding-left:12px; padding-right:12px;}
+div.phone_block {padding-right:90px;padding-top:10px;overflow: hidden;}
+div.studio_block {padding-right:10px;padding-left:170px;overflow:hidden;}
+div.disclaimer{background-color: #881416; padding-left:25px; padding-right: 25px; padding-top:10px; padding-bottom:10px; margin-bottom:20px; color:white;}
+div.disclaimer p, .disclaimer h3{color:white;}
+div.gallery_inner {margin: 0 20px;}
+p {color: #3B3B3B;padding-bottom:10px;}
+div#vk_comments{padding-bottom:15px;}
+p#copyright{font-size:80%;margin: 5px 50px; width:700px;}
+ul#buttons-list{
+	list-style: none;
+	text-align: center;
+	margin-top: 15px;
+}
+p.welcome{font-weight:900;text-align:center;}
+p.video{text-align: center;}
+.caption1 {font-size:120%;}
+li {color: #3B3B3B;}
+dl {margin-top:0px;}
+dt {color: #3B3B3B;}
+dd {color: #3B3B3B;}
+table#female-gypsy-costum-table {border-spacing: 10px;}
+td {text-align:justify;}
+td.down_line { color: #3B3B3B;text-align:center;}
+td.news_caption {padding-left:40px; padding-bottom: 10px; font-size:120%;}
+td.news_text { text-align:left; color: #3B3B3B; font-size:100%;}
+td.phone {text-align:right; padding-right:60px;}
+h1 {color: #3B3B3B; text-align:center; padding-top:15px; padding-bottom:20px; font-size:140%; font-weight:900;}
+h2 {color: #3B3B3B; text-align:center; padding-bottom:20px; padding-left:50px; font-size:110%; font-weight:900;}
+h3 {color: #3B3B3B; text-align:center; font-size:100%;}
+h3.video_header{text-align: center; padding: 0 0 10px;}
+h4{color:white; text-align: center;}
+.black_header{color:black; padding-top:20px;padding-bottom:10px;}
+.center_header{text-align: center;}
+.b {font-weight:900;}
+.h {font: bold 1.2em  Arial, Helvetica, sans-serif; color:white;}
+.s {color:white;}
+span.menu_sel { color:#3B3B3B; font-size:100%; line-height:130%; font-weight:300; text-decoration:none; }
+a {font-family:Georgia, Verdana, Arial, Helvetica, sans-serif;  color:#3B3B3B; font-size:100%; outline:none;}
+a.menu {color:#3B3B3B; font-size:100%; line-height:130%; font-weight:300; text-decoration:none; border-bottom: 1px dotted;}
+a.menu:hover { color:#EE0404; font-size:100%; font-weight:300; text-decoration:none; border-bottom: none;}
+.special {background: #9b2d30; color: #fff !important; font-size: 150% !important; font-weight:bold !important; text-decoration:blink !important;}
+a img {text-decoration:none; }
+a:hover { color:#3B3B3B; font-size:100%; text-decoration:none; }
+ul {margin-top:0px;}
+ul.quote { list-style-type:none; }
+ul.sites_list{list-style-type:disc;}
+ul.footer_links {left:50%; list-style-type:none; margin-left: -200px; padding: 0 0 0 15px; position:relative; width: 400px;} 
+.training_content h3{
+color: white;
+font:  italic bold 20px Georgia, Times, serif ;
+margin: 20px 0 20px 0;
+}
+.training_content h4{
+color: white;
+font: bold 16px Georgia, Times, serif;
+margin: -10px 0;
+}
+.training_content ul {
+    list-style-type:none !important;
+}
+.item {
+    margin: -15px 0 20px 0 !important;
+}
+.training table.gb {
+    border: 1px solid #585959;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 450px;
+    margin: 0 auto 1em;
+}
+.training table.gb td,
+.training table.gb th {
+    border: 1px solid #585959;
+}
+.training td, .training th {
+    min-height: 35px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    text-align: center;
+} 
+.training th {
+    background: #afafaf;
+    font-weight: bold;
+}
+.training td {
+    background: #ccc;
+}
+.training h2 {
+    margin-bottom: 1em;
+}
+
+.training table.gb td.l {
+    text-align: left;
+}
+
+.aligncenter {text-align:center;}
+.alignleft {text-align:left;}
+.alignright {text-align:right;} 

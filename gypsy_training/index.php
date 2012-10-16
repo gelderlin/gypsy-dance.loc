@@ -1,0 +1,8 @@
+<?php include("../templates/script.php"); 
+
+
+
+?>
+<?php include("../templates/main.php"); ?>
+<?php include("../articles/training.php"); ?>
+<?php include("../templates/footer.php") ?>

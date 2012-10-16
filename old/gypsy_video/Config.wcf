@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="Windows-1251" ?><config ver="2.2.16.00">
+<cols name="Files">
+<Property name="File">
+<Value name="FileName" type="8" value="I:\Sites\backups\gypsy-dance.ru\www\gypsy_video\orto-2008.flv"/>
+<cols name="SubFiles"/>
+<cols name="Timelines"/>
+<cols name="Streams">
+<Property name="Stream">
+<Value name="SourcePath" type="8" value="&lt;Source&gt;">
+<Property name="File">
+<cols name="SubFiles"/>
+<cols name="Timelines"/>
+<cols name="Streams">
+<Property name="Stream">
+<Value name="ChildStreamID" type="3" value="1"/>
+</Property>
+<Property name="Stream">
+<Value name="StreamType" type="3" value="1"/>
+<Value name="StreamID" type="3" value="1"/>
+</Property>
+</cols>
+<cols name="Watermarks"/>
+</Property>
+</Value>
+<Value name="ChildStreamID" type="3" value="1"/>
+</Property>
+<Property name="Stream">
+<Value name="SourcePath" type="8" value="&lt;Source&gt;">
+<Property name="File">
+<cols name="SubFiles"/>
+<cols name="Timelines"/>
+<cols name="Streams">
+<Property name="Stream">
+<Value name="ChildStreamID" type="3" value="1"/>
+</Property>
+<Property name="Stream">
+<Value name="StreamType" type="3" value="1"/>
+<Value name="StreamID" type="3" value="1"/>
+</Property>
+</cols>
+<cols name="Watermarks"/>
+</Property>
+</Value>
+<Value name="StreamType" type="3" value="1"/>
+<Value name="StreamID" type="3" value="1"/>
+</Property>
+</cols>
+</Property>
+</cols>
+<cols name="Profiles">
+<Property name="Profile">
+<Value name="DestinationFolder" type="8" value="I:\Sites\backups\gypsy-dance.ru\www\gypsy_video\"/>
+<Value name="FormatNumericVariable" type="8" value="%d"/>
+<Value name="NumericVarIncrement" type="19" value="1"/>
+<Value name="BitrateVideo_FLV" type="3" value="457"/>
+<Value name="SamplingRate_FLV" type="3" value="1"/>
+<Value name="ChannelMode_FLV" type="3" value="2"/>
+<Value name="BitrateAudio_FLV" type="3" value="80"/>
+<cols name="Watermarks">
+<Property name="Text"  clsid="{69A50B2F-A1E6-488F-8EEE-B44750BE98A7}">
+<Value name="posX" type="22" value="92"/>
+<Value name="posY" type="22" value="200"/>
+<cols name="Timelines">
+<Property name="Timeline">
+<Value name="StartTime" type="8" value="00.00"/>
+<Value name="EndOfFile" type="3" value="1"/>
+<cols name="WatermarkTracks" clsid="{4C815FA6-A5DB-4E97-BFA7-892575A6E379}">
+<Property name="Track">
+<cols name="WatermarkStream"/>
+</Property>
+</cols>
+</Property>
+</cols>
+<Value name="Text" type="8" value="http://devi-dance.ru"/>
+<Value name="Color" type="8" value="0xFFFFFF"/>
+<Value name="Gradient" type="8" value="">
+<Property name="Gradient"  clsid="{8657A081-79B6-46A2-9DF9-04476C685183}">
+</Property>
+</Value>
+<Value name="Pattern" type="8" value="">
+<Property name="Pattern"  clsid="{9F55AA73-DDDE-4690-93D4-AF4176A8C785}">
+</Property>
+</Value>
+<Value name="DropShadow" type="3" value="1">
+<Property name="DropShadow"  clsid="{5F8831B5-8935-4676-A0D6-0DE5CA9FCEEA}">
+</Property>
+</Value>
+<Value name="3D" type="3" value="1">
+<Property name="3D"  clsid="{5FC226BB-6191-404F-AA73-3A832836FF77}">
+</Property>
+</Value>
+<Value name="Transformation" type="3" value="0">
+<Property name="Inclination"  clsid="{50099784-7FA3-43C7-9FF4-1B2171363175}">
+</Property>
+</Value>
+</Property>
+</cols>
+<cols name="Timelines">
+<Property name="Timeline">
+<Value name="StartTime" type="8" value="00.00"/>
+<Value name="EndTime" type="8" value="49.13"/>
+</Property>
+</cols>
+<cols name="Streams">
+<Property name="Stream">
+<Value name="SourcePath" type="8" value="&lt;Source&gt;">
+<Property name="File">
+<cols name="SubFiles"/>
+<cols name="Timelines"/>
+<cols name="Streams">
+<Property name="Stream">
+<Value name="ChildStreamID" type="3" value="1"/>
+</Property>
+<Property name="Stream">
+<Value name="StreamType" type="3" value="1"/>
+<Value name="StreamID" type="3" value="1"/>
+</Property>
+</cols>
+<cols name="Watermarks"/>
+</Property>
+</Value>
+<Value name="ChildStreamID" type="3" value="1"/>
+</Property>
+<Property name="Stream">
+<Value name="SourcePath" type="8" value="&lt;Source&gt;">
+<Property name="File">
+<cols name="SubFiles"/>
+<cols name="Timelines"/>
+<cols name="Streams">
+<Property name="Stream">
+<Value name="ChildStreamID" type="3" value="1"/>
+</Property>
+<Property name="Stream">
+<Value name="StreamType" type="3" value="1"/>
+<Value name="StreamID" type="3" value="1"/>
+</Property>
+</cols>
+<cols name="Watermarks"/>
+</Property>
+</Value>
+<Value name="StreamType" type="3" value="1"/>
+<Value name="StreamID" type="3" value="1"/>
+</Property>
+</cols>
+</Property>
+</cols>
+</config>
