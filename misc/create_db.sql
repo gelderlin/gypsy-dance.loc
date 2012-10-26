@@ -13,8 +13,8 @@ DROP TABLE IF EXISTS `mydb`.`Categories` ;
 
 CREATE  TABLE IF NOT EXISTS `mydb`.`Categories` (
   `id` SMALLINT NOT NULL AUTO_INCREMENT ,
-  `name` TINYTEXT NOT NULL DEFAULT 'Новости' ,
-  `slug` TINYTEXT NOT NULL DEFAULT 'news' ,
+  `name` TINYTEXT NOT NULL ,
+  `slug` TINYTEXT NOT NULL ,
   `path` TINYTEXT NOT NULL ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
   PRIMARY KEY (`id`) )
@@ -40,7 +40,6 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Costumes` (
   `Categories_id` SMALLINT NOT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
-  UNIQUE INDEX `name_UNIQUE` (`name` ASC) ,
   INDEX `fk_Costumes_Categories1_idx` (`Categories_id` ASC) )
 ENGINE = InnoDB;
 
@@ -54,19 +53,12 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Articles` (
   `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `slug` TINYTEXT NOT NULL ,
   `title` TEXT NOT NULL ,
-  `datetime` DATETIME NOT NULL DEFAULT NOW() ,
+  `datetime` DATETIME NOT NULL ,
   `text` TEXT NULL ,
   `Categories_id` SMALLINT NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_Articles_Categories_idx` (`Categories_id` ASC) )
 ENGINE = InnoDB;
-
-
-SET SQL_MODE = '';
-GRANT USAGE ON *.* TO admin;
- DROP USER admin;
-SET SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
-CREATE USER `admin` IDENTIFIED BY 'AMkijaya9999';
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
