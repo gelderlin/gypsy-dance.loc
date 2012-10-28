@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /old/
-Disallow: /test/
 Disallow: /articles/gypsy_space/cyganskii_romans_2.php
 Disallow: /articles/gypsy_space/i_vsyudu_strasti_rokovye_2.php
 Disallow: /articles/gypsy_space/kochuyuschaya_naciya.php
