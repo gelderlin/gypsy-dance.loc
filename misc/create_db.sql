@@ -7,12 +7,12 @@ CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET cp1251 COLLATE cp1251_g
 USE `mydb` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Categories`
+-- Table `mydb`.`Category`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Categories` ;
+DROP TABLE IF EXISTS `mydb`.`Category` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`Categories` (
-  `id` SMALLINT NOT NULL AUTO_INCREMENT ,
+CREATE  TABLE IF NOT EXISTS `mydb`.`Category` (
+  `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `name` TINYTEXT NOT NULL ,
   `slug` TINYTEXT NOT NULL ,
   `path` TINYTEXT NOT NULL ,
@@ -22,42 +22,52 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Costumes`
+-- Table `mydb`.`Costume`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Costumes` ;
+DROP TABLE IF EXISTS `mydb`.`Costume` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`Costumes` (
+CREATE  TABLE IF NOT EXISTS `mydb`.`Costume` (
   `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `slug` TINYTEXT NOT NULL ,
   `name` TINYTEXT NOT NULL ,
   `description` TEXT NULL ,
   `size` VARCHAR(8) NULL ,
   `price` TINYTEXT NOT NULL ,
-  `category_id` TINYINT UNSIGNED NOT NULL ,
   `in_archive` TINYINT(1) NOT NULL DEFAULT 0 ,
   `big_image` TINYTEXT NOT NULL ,
   `small_image` TINYTEXT NOT NULL ,
-  `Categories_id` SMALLINT NOT NULL ,
+  `category_id` SMALLINT UNSIGNED NOT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
-  INDEX `fk_Costumes_Categories1_idx` (`Categories_id` ASC) )
+  INDEX `FK_costume_category_idx` (`category_id` ASC) ,
+  CONSTRAINT `FK_costume_category`
+    FOREIGN KEY (`category_id` )
+    REFERENCES `mydb`.`Category` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Articles`
+-- Table `mydb`.`Article`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Articles` ;
+DROP TABLE IF EXISTS `mydb`.`Article` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`Articles` (
+CREATE  TABLE IF NOT EXISTS `mydb`.`Article` (
   `id` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `slug` TINYTEXT NOT NULL ,
   `title` TEXT NOT NULL ,
   `datetime` DATETIME NOT NULL ,
-  `text` TEXT NULL ,
-  `Categories_id` SMALLINT NOT NULL ,
+  `text` TEXT NOT NULL ,
+  `category_id` SMALLINT UNSIGNED NOT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `fk_Articles_Categories_idx` (`Categories_id` ASC) )
+  INDEX `category_idx` (`category_id` ASC) ,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
+  CONSTRAINT `FK_article_category`
+    FOREIGN KEY (`category_id` )
+    REFERENCES `mydb`.`Category` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
