@@ -1,0 +1,63 @@
+<?php
+
+namespace Acme\GypsyBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Acme\GypsyBundle\Entity\Article
+ *
+ * @ORM\Table(name="article")
+ * @ORM\Entity
+ */
+class Article
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="smallint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $slug
+     *
+     * @ORM\Column(name="slug", type="text", nullable=false)
+     */
+    private $slug;
+
+    /**
+     * @var string $title
+     *
+     * @ORM\Column(name="title", type="text", nullable=false)
+     */
+    private $title;
+
+    /**
+     * @var \DateTime $datetime
+     *
+     * @ORM\Column(name="datetime", type="datetime", nullable=false)
+     */
+    private $datetime;
+
+    /**
+     * @var string $text
+     *
+     * @ORM\Column(name="text", type="text", nullable=false)
+     */
+    private $text;
+
+    /**
+     * @var Category
+     *
+     * @ORM\ManyToOne(targetEntity="Category")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     * })
+     */
+    private $category;
+
+
+}

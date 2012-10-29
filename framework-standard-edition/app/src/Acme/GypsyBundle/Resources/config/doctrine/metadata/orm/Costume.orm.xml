@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Costume" table="costume">
+    <id name="id" type="smallint" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="slug" type="text" column="slug" nullable="false"/>
+    <field name="name" type="text" column="name" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="true"/>
+    <field name="size" type="string" column="size" length="8" nullable="true"/>
+    <field name="price" type="text" column="price" nullable="false"/>
+    <field name="inArchive" type="boolean" column="in_archive" nullable="false"/>
+    <field name="bigImage" type="text" column="big_image" nullable="false"/>
+    <field name="smallImage" type="text" column="small_image" nullable="false"/>
+    <many-to-one field="category" target-entity="Category">
+      <join-columns>
+        <join-column name="category_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

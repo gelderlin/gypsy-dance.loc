@@ -1,0 +1,88 @@
+<?php
+
+namespace Acme\GypsyBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Acme\GypsyBundle\Entity\Costumes
+ *
+ * @ORM\Table(name="costumes")
+ * @ORM\Entity
+ */
+class Costumes
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="smallint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $slug
+     *
+     * @ORM\Column(name="slug", type="text", nullable=false)
+     */
+    private $slug;
+
+    /**
+     * @var string $name
+     *
+     * @ORM\Column(name="name", type="text", nullable=false)
+     */
+    private $name;
+
+    /**
+     * @var string $description
+     *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var string $size
+     *
+     * @ORM\Column(name="size", type="string", length=8, nullable=true)
+     */
+    private $size;
+
+    /**
+     * @var string $price
+     *
+     * @ORM\Column(name="price", type="text", nullable=false)
+     */
+    private $price;
+
+    /**
+     * @var boolean $inArchive
+     *
+     * @ORM\Column(name="in_archive", type="boolean", nullable=false)
+     */
+    private $inArchive;
+
+    /**
+     * @var string $bigImage
+     *
+     * @ORM\Column(name="big_image", type="text", nullable=false)
+     */
+    private $bigImage;
+
+    /**
+     * @var string $smallImage
+     *
+     * @ORM\Column(name="small_image", type="text", nullable=false)
+     */
+    private $smallImage;
+
+    /**
+     * @var integer $categoriesId
+     *
+     * @ORM\Column(name="Categories_id", type="smallint", nullable=false)
+     */
+    private $categoriesId;
+
+
+}

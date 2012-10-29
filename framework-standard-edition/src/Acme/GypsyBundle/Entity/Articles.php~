@@ -1,0 +1,60 @@
+<?php
+
+namespace Acme\GypsyBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Acme\GypsyBundle\Entity\Articles
+ *
+ * @ORM\Table(name="articles")
+ * @ORM\Entity
+ */
+class Articles
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="smallint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string $slug
+     *
+     * @ORM\Column(name="slug", type="text", nullable=false)
+     */
+    private $slug;
+
+    /**
+     * @var string $title
+     *
+     * @ORM\Column(name="title", type="text", nullable=false)
+     */
+    private $title;
+
+    /**
+     * @var \DateTime $datetime
+     *
+     * @ORM\Column(name="datetime", type="datetime", nullable=false)
+     */
+    private $datetime;
+
+    /**
+     * @var string $text
+     *
+     * @ORM\Column(name="text", type="text", nullable=true)
+     */
+    private $text;
+
+    /**
+     * @var integer $categoriesId
+     *
+     * @ORM\Column(name="Categories_id", type="smallint", nullable=false)
+     */
+    private $categoriesId;
+
+
+}
